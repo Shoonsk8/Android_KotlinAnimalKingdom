@@ -57,7 +57,7 @@ fun main(args: Array<String>) {
         println("name is ${filteredanimal[i].name} , which ${filteredanimal[i].move()} and ${filteredanimal[i].breath()} reproduce with ${filteredanimal[i].reprduce()} " )
     }
 
-    filteredanimal=filteredanimal.filter { it->it.yearDiscovered==1758 }
+    filteredanimal=animals.filter { it->it.yearDiscovered==1758 }
     filteredanimal.sortedBy { it.name }
 
     for(i in 0..filteredanimal.size-1){
